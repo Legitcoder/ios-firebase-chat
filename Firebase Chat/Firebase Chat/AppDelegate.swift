@@ -17,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        
+        let chatRoomController = ChatRoomController()
+        //chatRoomController.createChatRoom(name: "Another Room")
+        //chatRoomController.fetchChatRoom(chatRoomId: "-LPZFfIqYMY7EUK5x6Ks")
+        chatRoomController.fetchChatRooms()
         return true
     }
 
